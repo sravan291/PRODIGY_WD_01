@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<script>
+  window.onscroll = function() {
+    var navbar = document.getElementById("navbar");
+    if (window.pageYOffset > 100) {
+        navbar.style.backgroundColor = "#555";
+    } else {
+        navbar.style.backgroundColor = "#333";
+    }
+};
+</script>
+  
+
+  
+  <style>
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+section {
+    padding: 60px 20px;
+    height: 100vh;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+#about {
+    background-color: #ddd;
+}
+
+#services {
+    background-color: #bbb;
+}
+
+#contact {
+    background-color: #999;
+}
+
+  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Home Section</h1>
+        <p>Welcome to the home page.</p>
+    </section>
+    <section id="about">
+        <h1>About Section</h1>
+        <p>Learn more about us here.</p>
+    </section>
+    <section id="services">
+        <h1>Services Section</h1>
+        <p>Discover our services.</p>
+    </section>
+    <section id="contact">
+        <h1>Contact Section</h1>
+        <p>Get in touch with us.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
